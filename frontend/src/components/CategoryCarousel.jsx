@@ -24,7 +24,7 @@ function CategoryCarousel() {
         <Carousel className="w-full max-w-[220px] md:max-w-xl mx-auto my-20">
             <CarouselContent>
              { category.map((items,index) => (
-                 <CarouselItem className="md:basis-1/2 lg:basis-1/3 basis-1"  key={index}>
+                 <CarouselItem className="md:basis-1/2 lg:basis-1/3 "  key={index}>
                  <Button variant="outline" onClick={()=>searchHandler(items)} className="rounded-full">{items}</Button>
                     </CarouselItem>
              ))

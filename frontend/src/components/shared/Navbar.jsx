@@ -29,7 +29,7 @@ function Navbar() {
     }
     return (
         <div className='bg-white flex items-center justify-between mx-auto p-4 ' >
-            <div>
+            <div >
                 <h1 className='text-2xl font-bold'>Job<span className='text-[#C75B7A]'>Tool</span></h1>
             </div>
             <div className='flex gap-3 justify-around'> 
@@ -43,7 +43,7 @@ function Navbar() {
                           </>  
                         ):(
                             <>
-                             <li><Link to="/">Home</Link></li>
+                             <li className=' invisible md:visible '> <Link to="/">Home</Link></li>
                             <li><Link to="/jobs">Jobs</Link></li>
                             <li><Link to="/browse">Browse</Link></li>
                             </>
